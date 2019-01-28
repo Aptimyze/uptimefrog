@@ -1,6 +1,6 @@
 {
     "name": "mariopajunovic/uptimefrog",
-    "type": "Uptime Frog",
+    "type": "project",
     "homepage": "https://uptimefrog.com",
     "description": "Uptime checker/monitoring application based on Laravel Framework.",
     "keywords": [
