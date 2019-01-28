@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => UptimeFrog\User::class,
+            'model' => UptimeFrog\Monitor\User::class,
         ],
 
         // 'users' => [

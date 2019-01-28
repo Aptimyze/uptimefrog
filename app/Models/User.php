@@ -1,6 +1,6 @@
 <?php
 
-namespace UptimeFrog;
+namespace UptimeFrog\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
