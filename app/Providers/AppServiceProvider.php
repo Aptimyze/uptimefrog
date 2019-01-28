@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace UptimeFrog\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
