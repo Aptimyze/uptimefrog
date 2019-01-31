@@ -10,7 +10,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
-
+                    @auth
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">{{ __('Dashboard') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">{{ __('Monitors') }}</a>
+                        </li>
+                    @endauth
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -26,12 +33,31 @@
                             </li>
                         @endif
                     @else
+                        <li class="nav-item pr-2 d-none d-md-block">
+                            <a class="nav-link btn btn-success" href="#">
+                                Active <span class="badge badge-light">33</span>
+                            </a>
+                        </li>
+                        <li class="nav-item pr-2 d-none d-md-block">
+                            <a class="nav-link btn btn-danger" href="#">
+                                Down <span class="badge badge-light">2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item pr-2 d-none d-md-block">
+                            <a class="nav-link btn btn-secondary" href="#">
+                                Paused <span class="badge badge-light">7</span>
+                            </a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">
+                                    {{ __('Account settings') }}
+                                </a>
+
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
