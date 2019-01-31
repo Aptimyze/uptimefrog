@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    font-family: Whitney SSm A,
+    Whitney SSm B,
+    Arial,
+    sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #424c54;
+    text-align: left;
+    background-color: #ebebeb;
+    height: 100%;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+nav.navbar {
+    border-top: 4px solid $green;
+    background-color: $dark;
+    font-size: 1.1em;
+    min-height: 54px !important;
+}
+
+nav .container-fluid{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.navbar {
+    position: relative;
+    padding: .5rem 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $white;
+}
+
+nav.navbar .dropdown-menu {
+    background-color: $dark;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: $white;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+nav.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: $dark;
+    color: #ddd;
+}
+
+.form-control:focus {
+    color: $dark;
+    background-color: $white;
+    border-color: $primary;
+    outline: 0;
+    -webkit-box-shadow: 0;
+    box-shadow: 0;
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fafafa;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: .35rem;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .16);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .16);
+}
+
+.card .card-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-header:first-child {
+    border-radius: .35rem .35rem 0 0;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: $white;
+    border-bottom: 0 solid rgba(0, 0, 0, .125);
+}
+
+.card .table {
+    margin-bottom: 0;
+}
+
+.card .table td {
+    vertical-align: middle;
+}
+
+.card .card-header h5 {
+    margin: 0;
+}
+
+.sidebar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.modal-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-header:first-child {
+    border-radius: .35rem .35rem 0 0;
+}
+
+.modal-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #fafafa;
+    border-bottom: 0 solid rgba(0, 0, 0, .125);
+}
+
+.modal-header h5 {
+    margin: 0;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 74px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #eee;
+}
+
+
+.btn-b0{
+    border-radius: 0;
+}
