@@ -22,3 +22,5 @@ You need to make sure your server meets the following requirements. For more inf
 #### 3. Clone project
 
 #### 4. Composer inst
+
+### Kris is here! 8)
