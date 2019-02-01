@@ -17,7 +17,15 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 
 
-
+//Service routers
 Route::group(['middleware' => 'auth', 'namespace' => 'Service'], function () {
+
+    //Dashboard route
     Route::get('/', 'DashboardController@index')->name('dashboard');
+
+    //Monitors route
+    Route::group(array('prefix' => 'monitors'), function() {
+        Route::get('/', 'MonitorController@index')->name('monitor.index');
+    });
+    
 });

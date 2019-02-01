@@ -15,7 +15,7 @@
                             <a class="nav-link" href="/">{{ __('Dashboard') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">{{ __('Monitors') }}</a>
+                            <a class="nav-link" href="{{ route('monitor.index') }}">{{ __('Monitors') }}</a>
                         </li>
                     @endauth
                 </ul>
